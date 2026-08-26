@@ -9,6 +9,7 @@
     min-height: 80vh;
     max-width: 960px;
     margin: 0 auto;
+    animation: myanim 1s ease;
 }
 
 .infoSet {

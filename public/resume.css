@@ -7,6 +7,7 @@
     z-index: 1;
     background-color: var(--boxColor);
     border-radius: 6px;
+    animation: myanim 1s ease;
 }
 
 #resume h1 {

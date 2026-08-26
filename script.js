@@ -18,15 +18,18 @@ if (miniGameLink) {
         window.open('https://theonegingerguy.github.io/Mini-Game-Project/', '_blank');
     });
 }
-
-const follower = document.getElementById('follower');
-if (follower) {
-    document.addEventListener('mousemove', (e) => {
-        follower.style.left = `${e.clientX}px`;
-        follower.style.top = `${e.clientY}px`;
-    });
+const githubLink = document.getElementById('githubButton');
+if(githubLink){
+    githubLink.addEventListener('click',function(){
+        window.open('https://github.com/TheOneGingerGuy', '_blank')
+    })
 }
-
+const linkedinLink = document.getElementById('linkedinButton');
+if(linkedinLink){
+    linkedinLink.addEventListener('click',function(){
+        window.open('https://www.linkedin.com/in/ben-andrade-ab66b9384/','_blank')
+    })
+}
 const hexConfig = {
     '.htmlWrapper':   100,
     '.cssWrapper':    100,

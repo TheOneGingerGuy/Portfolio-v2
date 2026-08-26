@@ -7,11 +7,11 @@ class SiteHeader extends HTMLElement{
             <h1>Ben's Digital Portfolio</h1>
         </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">My Projects</a>
-            <a href="resume.html">Resume/Previous Work Experience</a>
-            <a href="contact.html">Contact</a>
+            <a href="/">Home</a>
+            <a href="/skills">Skills</a>
+            <a href="/projects">My Projects</a>
+            <a href="/resume">Resume/Previous Work Experience</a>
+            <a href="/contact">Contact</a>
         </nav>
     </header>
     `;

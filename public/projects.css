@@ -10,8 +10,74 @@
     gap: 30px;
     position: relative;
     z-index: 1;
+    animation: myanim 1s ease;
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
+#projects h1 {
+    border: 2px solid #555;
+    border-radius: 6px;
+    padding: 10px 60px;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+.projectList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 16px;
+    width: 100%;
+}
+
+.projectItem {
+    background-color: #1a1a1a;
+    border-radius: 6px;
+    border: 1px solid #333;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.3s ease;
+}
+
+.projectItem:hover {
+    border-color: var(--accent1);
+}
+
+.projectItem h1 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 12px 14px;
+    border-bottom: 1px solid #2a2a2a;
+    text-align: center;
+}
+
+.projectItem img {
+    width: 85%;
+    margin: 16px auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    background-color: #111;
+    display: block;
+    border-radius: 4px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.projectItem img:hover {
+    transform: scale(1.03);
+}
+
+.projectItem p {
+    margin-top: 0;
+    padding: 10px 14px;
+    border-top: 1px solid #2a2a2a;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
 .projectItem a {
     color: var(--accent1);
     text-decoration: none;
@@ -20,5 +86,3 @@
 .projectItem a:hover {
     text-decoration: underline;
 }
-
-
