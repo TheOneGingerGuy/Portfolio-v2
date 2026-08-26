@@ -20,7 +20,8 @@
   "scripts": {
     "test": "hi",
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "pages": "nodemon pagesServer.js"
   },
   "dependencies": {
     "express": "^5.2.1"

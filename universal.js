@@ -3,7 +3,7 @@ class SiteHeader extends HTMLElement{
         this.innerHTML = `
         <header>
         <div class="headerLeft">
-            <img src="../public/images/asset.png" alt="Portfolio Logo" class="logo">
+            <img src="/public/images/asset.png" alt="Portfolio Logo" class="logo">
             <h1>Ben's Digital Portfolio</h1>
         </div>
         <nav>
