@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../public/universal.css">
+    <link rel="stylesheet" href="../public/contact.css">
+    <script src="../universal.js"></script>
+</head>
+<body>
+    <site-header></site-header>
+    <main><section id="contact">
+        <div class="contactWrap">
+            <div class="contactTopbar">
+                <span class="contactTopLabel">Get in touch</span>
+                <span class="contactPhone">&#128222; (437) 216-1611</span>
+            </div>
+            <h1 class="contactHeading">Contact me</h1>
+           <form action="https://formsubmit.co/3a326880ab4e1f6ae3d5d72e0f882faa" method="POST" style="display:flex; flex-direction:column; flex:1; gap:16px;">
+                <div class="contactRow">
+                    <div class="contactField">
+                        <label class="contactLabel">&#128100; Name</label>
+                        <input type="text" name="name" placeholder="Your name / Company" required>
+                    </div>
+                    <div class="contactField">
+                        <label class="contactLabel">&#9993; Email</label>
+                        <input type="email" name="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="contactField">
+                    <label class="contactLabel">&#128172; Message</label>
+                    <textarea name="message" placeholder="Email Content" required></textarea>
+                </div>
+                <button type="submit">Send Message &#10148;</button>
+            </form>
+        </div>
+    </section></main>
+    <site-footer></site-footer>
+    <script src="../script.js"></script>
+</body>
+</html>

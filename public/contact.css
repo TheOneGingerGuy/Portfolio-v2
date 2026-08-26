@@ -1,0 +1,110 @@
+#contact {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactWrap {
+    background-color: var(--boxColor);
+    border-radius: 6px;
+    padding: 30px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contactTopbar {
+    display: none;
+}
+
+.contactPhone {
+    display: none;
+}
+
+.contactHeading {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: var(--textColor);
+    text-align: center;
+    border: 2px solid #555;
+    border-radius: 6px;
+    padding: 22px 10px;
+}
+
+.contactHeading span {
+    display: none;
+}
+
+.contactRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 0;
+}
+
+.contactField {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0;
+}
+
+.contactRow .contactField {
+    margin-bottom: 0;
+}
+
+.contactLabel {
+    display: none;
+}
+
+.contactWrap input,
+.contactWrap textarea {
+    background: #1e1e1e;
+    border: 2px solid #555;
+    border-radius: 6px;
+    padding: 20px 14px;
+    color: var(--textColor);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contactWrap input::placeholder,
+.contactWrap textarea::placeholder {
+    color: #777;
+}
+
+.contactWrap input:focus,
+.contactWrap textarea:focus {
+    border-color: var(--accent1);
+}
+
+.contactWrap textarea {
+    resize: none;
+    min-height: 260px;
+    line-height: 1.6;
+    padding: 16px 14px;
+}
+
+.contactWrap button[type="submit"] {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(to right, var(--accent1), cornflowerblue);
+    color: var(--textColor);
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.contactWrap button[type="submit"]:hover {
+    transform: scale(1.02);
+}

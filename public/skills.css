@@ -1,0 +1,87 @@
+#skills {
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 30px 20px 40px;
+    margin: 40px auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    animation: myanim 1s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.skillsTitle {
+    border: 2px solid #555;
+    border-radius: 6px;
+    padding: 10px 60px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.skillsList {
+    position: relative;
+    width: 680px;
+    height: 410px;
+}
+
+.skillLogo {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    display: block;
+}
+
+.htmlWrapper, .cssWrapper, .jsWrapper, .pythonWrapper, .reactWrapper {
+    position: absolute;
+    width: 206px;
+    height: 230px;
+    z-index: 0;
+}
+
+.htmlWrapper::before, .cssWrapper::before, .jsWrapper::before,
+.pythonWrapper::before, .reactWrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: conic-gradient(
+        var(--accent1) 0%,
+        var(--accent1) var(--hex-pct, 0%),
+        var(--background) var(--hex-pct, 0%)
+    );
+    z-index: 0;
+}
+
+.Hex {
+    width: 80%;
+    height: 80%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: var(--boxColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.Hex span {
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--textColor);
+}
+
+.htmlWrapper:hover,
+.cssWrapper:hover,
+.jsWrapper:hover,
+.pythonWrapper:hover,
+.reactWrapper:hover {
+    z-index: 2;
+    filter: drop-shadow(0px 0px 6px var(--accent1));
+}

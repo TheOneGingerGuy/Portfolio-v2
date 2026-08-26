@@ -1,0 +1,110 @@
+
+#home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 80px 40px;
+    min-height: 80vh;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.infoSet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    width: 200px;
+}
+
+.hexagonWrapper {
+    width: 196px;
+    height: 220px;
+    position: relative;
+    animation: hexPulse 2s ease-in-out infinite;
+}
+
+@keyframes hexPulse {
+    0%, 100% { filter: drop-shadow(0px 0px 6px var(--accent1)); }
+    50% { filter: drop-shadow(0px 0px 20px var(--accent1)); }
+}
+
+.hexagon {
+    width: 196px;
+    height: 220px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagonInner {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.selfPortrait {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#home button {
+    display: inline-block;
+    width: fit-content;
+    border-radius: 5px;
+    background: linear-gradient(to right, var(--accent1), cornflowerblue);
+    color: var(--textColor);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+#home button:hover {
+    transform: scale(1.1);
+}
+
+#home p {
+    margin-left: auto;
+}
+
+.aboutMe {
+    flex: 1;
+    background-color: var(--boxColor);
+    border-radius: 6px;
+    padding: 32px 36px;
+    border-left: 3px solid var(--accent1);
+    width: 300px;
+    height: 300px;
+}
+
+.aboutMe h1 {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+}
+
+.aboutMe p {
+    line-height: 1.75;
+    font-size: 0.95rem;
+    color: #ccc;
+}
+.content {
+    display: block;
+}
