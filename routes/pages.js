@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 
 const router = express.Router();
-
 const viewPath = path.join(__dirname, '..', 'view');
 
 router.get('/', (req, res) => {
@@ -24,5 +23,4 @@ router.get('/contact', (req, res) => {
 router.get('/resume', (req, res) => {
     res.sendFile(path.join(viewPath, 'resume.html'));
 });
-
 module.exports = router;

@@ -33,7 +33,7 @@ if(linkedinLink){
 const hexConfig = {
     '.htmlWrapper':   100,
     '.cssWrapper':    100,
-    '.jsWrapper':     65,
+    '.jsWrapper':     75,
     '.pythonWrapper': 35,
     '.reactWrapper':  1,
 };
