@@ -7,7 +7,7 @@ const PORT = 3000;
 
 app.use('/view', express.static(path.join(__dirname, 'view')));
 app.use('/public', express.static(path.join(__dirname, 'public')));
-app.use(express.static(__dirname, { index: false })); // serves script.js and universal.js
+app.use(express.static(__dirname, { index: false }));
 
 app.use('/', pageRoutes);
 app.use((req,res)=>{
